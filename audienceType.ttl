@@ -10,7 +10,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://purl.org/dcx/lrmiAudienceType/> rdf:type skos:ConceptScheme;
-  dct:title "LRMI Audience Vocabulary";
+  dct:title "LRMI Audience Type Vocabulary";
   dc:creator "LRMI Task Group (DCMI)"@en;
   dct:created "2015-01-21"^^xsd:date ;
   dct:license <http://creativecommons.org/licenses/by/4.0/>.
