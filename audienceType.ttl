@@ -48,7 +48,7 @@ audType:457df3c5-247e-445a-bf3d-3145ce795961 rdf:type skos:Concept;
 audType:fc35bd68-f301-4ac2-8bdc-f965d2a26a0f rdf:type skos:Concept;
   skos:prefLabel "student"@en;
   skos:definition "The learner."@en;
-  skos:narrower lrmiType:a6760d5b-97b2-46ab-8b83-80ccd3f789d9;
+  skos:narrower audType:a6760d5b-97b2-46ab-8b83-80ccd3f789d9;
   skos:inScheme <http://purl.org/dcx/lrmiAudienceType/>.
   
 audType:a6760d5b-97b2-46ab-8b83-80ccd3f789d9 rdf:type skos:Concept;
