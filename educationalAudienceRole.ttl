@@ -9,7 +9,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<http://purl.org/dcx/educaitonalAudienceRole/> rdf:type skos:ConceptScheme;
+<http://purl.org/dcx/lrmi-vocabs/educaitonalAudienceRole/> rdf:type skos:ConceptScheme;
   dct:title "LRMI Educational Audience Role Vocabulary";
   dc:creator "LRMI Task Group (DCMI)"@en;
   dct:created "2015-01-21"^^xsd:date ;
