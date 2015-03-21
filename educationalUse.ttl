@@ -10,7 +10,8 @@
 # Defines a set of top-level concepts of Educational Use
 
 <http://purl.org/dcx/lrmi-vocabs/edUse/> a skos:ConceptScheme ;
-    dc:title "LRMI Educational Use vocabulary" .
+    dc:title "LRMI Educational Use vocabulary" ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/>.
 
 <http://purl.org/dcx/lrmi-vocabs/edUse/001> a skos:Concept ;
     skos:prefLabel "instruction"@en ;
