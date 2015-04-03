@@ -54,14 +54,14 @@ audRole:005 rdf:type skos:Concept;
 audRole:006 rdf:type skos:Concept;
   skos:prefLabel "student"@en;
   skos:definition "The learner."@en;
-  skos:narrower audType:007;
+  skos:narrower audRole:007;
   skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
   vs:term_status "unstable" .
   
 audRole:007 rdf:type skos:Concept;
   skos:prefLabel "peer/tutor"@en;
   skos:definition "The peer learner serving as tutor of another learner."@en;
-  skos:broader audType:006;
+  skos:broader audRole:006;
   skos:inScheme <http://purl.org/dcx/lrmi/educationalAudienceRole/>;
   vs:term_status "unstable" .
        
