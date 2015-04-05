@@ -28,7 +28,7 @@
 
 <http://purl.org/dcx/lrmi-vocabs/alignmentType/AT005> a skos:Concept ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "text complexity"@en .
+    skos:prefLabel "reading level"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/alignmentType/AT006> a skos:Concept ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
