@@ -1,0 +1,126 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/> a skos:ConceptScheme ;
+    dc:title "LRMI Learning Resource Type Vocabulary"@en ;
+    dc:description "The predominate genre, type or kind characterizing the learning resource."@en ;
+    dc:source "Based in part on the CEDS Learning Resource Type vocabulary found at https://ceds.ed.gov/element/000928"@en .
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT001> a skos:Concept ;
+    skos:prefLabel "Alternate Assessment"@en ;
+    skos:definition "An assessment that is used to evaluate the performance of students who are unable to participate in general state assessments even with accommodations."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#AlternateAssessment> ;
+    vs:term_status "unstable" .
+    
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT002> a skos:Concept ;
+    skos:prefLabel "Assessment Item"@en ;
+    skos:definition "A specific prompt, that defines a question or protocol for a measurable activity that triggers a response from a person used to determine whether the person has mastered a learning objective."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#AssessmentItem> ;
+    vs:term_status "unstable" .
+       
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT003> a skos:Concept ;
+    skos:prefLabel "Course"@en ;
+    skos:definition "A series of units and lessons used to teach the skills and knowledge required by its curriculum."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#Course> ;
+    vs:term_status "unstable" .
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT004> a skos:Concept ;
+    skos:prefLabel "Demonstration/Simulation"@en ;
+    skos:definition "An imitation or modeling of a real-world process."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#DemonstrationSimulation> ;
+    vs:term_status "unstable" .
+    
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT005> a skos:Concept ;
+    skos:prefLabel "Educator Curriculum Guide"@en ;
+    skos:definition "A document that defines what concepts should be taught and/or how a concept should be taught effectively."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#EducatorCurriculumGuide> ;
+    vs:term_status "unstable" .
+    
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT006> a skos:Concept ;
+    skos:prefLabel "Formative Assessment"@en ;
+    skos:definition "A process used by teachers and students during instruction that provides feedback to adjust ongoing teaching and learning to improve students' achievement of intended instructional outcomes. (CCSSO FAST SCASS, 2006)"@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#FormativeAssessment> ;
+    vs:term_status "unstable" .
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT007> a skos:Concept ;
+    skos:prefLabel "Images/Visuals"@en ;
+    skos:definition "Visual media, including but not limited to pictures, graphics, diagrams, figures, illustrations, charts, and maps."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#ImagesVisuals> ;
+    vs:term_status "unstable" .
+    
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT008> a skos:Concept ;
+    skos:prefLabel "Interim/Summative Assessment"@en ;
+    skos:definition "An assessment instrument used to evaluate student learning at the end of an instructional unit by comparing it against some standard or benchmark. A learning resource of this typemay be an \"assessment form,\" i.e. one instance of the assessment instrument that can equate scores with another instance of the same assessment."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#InterimSummativeAssessment> ;
+    vs:term_status "unstable" .    
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT009> a skos:Concept ;
+    skos:prefLabel "Learning Activity"@en ;
+    skos:definition "Activities engaged in by the learner for the purpose of acquiring certain skills, concepts, or knowledge, whether guided by an instructor or not. A Lesson may define one or more learning activities."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#LearningActivity> ;
+    vs:term_status "unstable" .    
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT010> a skos:Concept ;
+    skos:prefLabel "Lesson"@en ;
+    skos:definition "A detailed description of the course of instruction for a short period of time that is used by a teacher to guide class instruction.  A Unit contains one or more lessons."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#Lesson> ;
+    vs:term_status "unstable" .    
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT011> a skos:Concept ;
+    skos:prefLabel "Primary Source"@en ;
+    skos:definition "An artifact, document, recording, or other source of information that was created at the time under study and provides first-hand testimony or direct evidence concerning a topic under investigation."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#PrimarySource> ;
+    vs:term_status "unstable" .         
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT012> a skos:Concept ;
+    skos:prefLabel "Rubric Scoring Guide"@en ;
+    skos:definition "A document or guide that is used to delineate consistent criteria for grading."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#RubricScoringGuide> ;
+    vs:term_status "unstable" .
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT013> a skos:Concept ;
+    skos:prefLabel "Self Assessment"@en ;
+    skos:definition "An assessment in which the user gathers information about and reflects on his or her own knowledge, skills, learning, or attitudes."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#SelfAssessment> ;
+    vs:term_status "unstable" .
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT014> a skos:Concept ;
+    skos:prefLabel "Text"@en ;
+    skos:definition "The body of a printed work, to include reading passages."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#Text> ;
+    vs:term_status "unstable" . 
+
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT015> a skos:Concept ;
+    skos:prefLabel "Textbook"@en ;
+    skos:definition "A book used as a standard source of information on a particular subject."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#Textbook> ;
+    vs:term_status "unstable" .       
+ 
+<http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT016> a skos:Concept ;
+    skos:prefLabel "Unit"@en ;
+    skos:definition "A long-range plan of instruction on a particular concept; it contains multiple lessons that are related."@en ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> ;
+    dcterms:source <https://ceds.ed.gov/element/000928#Unit> ;
+    vs:term_status "unstable" .   
