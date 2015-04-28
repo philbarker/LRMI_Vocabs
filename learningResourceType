@@ -7,11 +7,13 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
 
 <http://purl.org/dcx/lrmi-vocabs/learningResourceType/> a skos:ConceptScheme ;
     dc:title "LRMI Learning Resource Type Vocabulary"@en ;
     dc:description "The predominate genre, type or kind characterizing the learning resource."@en ;
-    dc:source "Based in part on the CEDS Learning Resource Type vocabulary found at https://ceds.ed.gov/element/000928"@en .
+    dc:source "Based in part on the CEDS Learning Resource Type vocabulary found at https://ceds.ed.gov/element/000928"@en ;
+    adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .
 
 <http://purl.org/dcx/lrmi-vocabs/learningResourceType/LRT001> a skos:Concept ;
     skos:prefLabel "Alternate Assessment"@en ;
