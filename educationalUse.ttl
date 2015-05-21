@@ -3,6 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix edUse: <http://purl.org/dcx/lrmi-vocabs/edUse/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
@@ -15,21 +17,33 @@
 
 <http://purl.org/dcx/lrmi-vocabs/edUse/001> a skos:Concept ;
     skos:prefLabel "instruction"@en ;
+    skosxl:prefLabel edUse:instruction ;
     skos:definition "Primary purpose of the resource is to support the instructional process, student learning, or to provide information about the curriculum."@en ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
     skos:note "Based on the CEDS Learning Resource Educational Use term \"Curriculum/Instruction\" at https://ceds.ed.gov/element/001002."@en ;
     vs:term_status "unstable" .
     
+edUse:instruction a skosxl:label ;
+    skosxl:literalForm "instruction"@en .
+    
 <http://purl.org/dcx/lrmi-vocabs/edUse/002> a skos:Concept ;
     skos:prefLabel "assessment"@en ;
+    skosxl:prefLabel edUse:assessment ;
     skos:definition "Primary purpose of the resource is to evaluate learning, either before or after instruction occurs."@en ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
     skos:note "Based on the CEDS Learning Resource Educational Use term \"Assessment\" at https://ceds.ed.gov/element/001002."@en ;
     vs:term_status "unstable" .
+    
+edUse:assessment a skosxl:label ;
+    skosxl:literalForm "assessment"@en .    
 
 <http://purl.org/dcx/lrmi-vocabs/edUse/003> a skos:Concept ;
     skos:prefLabel "professional development"@en ;
+    skosxl:prefLabel edUse:professionalDevelopment ;
     skos:definition "Primary purpose of the resource is to provide instruction for a teacher or other education professional."@en ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
     skos:note "Based on the CEDS Learning Resource Educational Use term \"Professional Development\" at https://ceds.ed.gov/element/001002."@en ;  
     vs:term_status "unstable" .
+
+edUse:professionalDevelopment a skosxl:label ;
+    skosxl:literalForm "professional development"@en .
