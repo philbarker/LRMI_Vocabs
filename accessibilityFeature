@@ -316,82 +316,82 @@
 #=====================
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/alternativeText> a skosxl:label ;
-    skosxl:literalForm "Alternative Text" .
+    skosxl:literalForm "Alternative Text"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/annotations> a skosxl:label ;
-    skosxl:literalForm "Annotations" .
+    skosxl:literalForm "Annotations"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/bookMarks> a skosxl:label ;
-    skosxl:literalForm "Book Marks" .
+    skosxl:literalForm "Book Marks"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/braille> a skosxl:label ;
-    skosxl:literalForm "Braille" .
+    skosxl:literalForm "Braille"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/captions> a skosxl:label ;
-    skosxl:literalForm "Captions" .
+    skosxl:literalForm "Captions"@en .
     
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/ChemML> a skosxl:label ;
-    skosxl:literalForm "Chemical Markup Language" . 
+    skosxl:literalForm "Chemical Markup Language"@en . 
     
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/describedMath> a skosxl:label ;
-    skosxl:literalForm "Described Math" .
+    skosxl:literalForm "Described Math"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/displayTransformability> a skosxl:label ;
-    skosxl:literalForm "Display Transformability" .         
+    skosxl:literalForm "Display Transformability"@en .         
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/highContrastAudio> a skosxl:label ;
-    skosxl:literalForm "High Contrast Audio" .
+    skosxl:literalForm "High Contrast Audio"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/highContrastDisplay> a skosxl:label ;
-    skosxl:literalForm "High Contrast Display" .
+    skosxl:literalForm "High Contrast Display"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/index> a skosxl:label ;
-    skosxl:literalForm "Index" .
+    skosxl:literalForm "Index"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/largePrint> a skosxl:label ;
-    skosxl:literalForm "Large Print" .
+    skosxl:literalForm "Large Print"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/latex> a skosxl:label ;
-    skosxl:literalForm "Latex" .
+    skosxl:literalForm "Latex"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/longDescription> a skosxl:label ;
-    skosxl:literalForm "Long Description" .
+    skosxl:literalForm "Long Description"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/MathML> a skosxl:label ;
-    skosxl:literalForm "Math ML" .    
+    skosxl:literalForm "Math ML"@en .    
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/none> a skosxl:label ;
-    skosxl:literalForm "None" .
+    skosxl:literalForm "None"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/printPageNumbers> a skosxl:label ;
-    skosxl:literalForm "Print Page Number" .
+    skosxl:literalForm "Print Page Number"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/readingOrder> a skosxl:label ;
-    skosxl:literalForm "Reading Order" .
+    skosxl:literalForm "Reading Order"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/signLanguage> a skosxl:label ;
-    skosxl:literalForm "Sign Language" .
+    skosxl:literalForm "Sign Language"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/structuralNavigation> a skosxl:label ;
-    skosxl:literalForm "Structural Navigation" .
+    skosxl:literalForm "Structural Navigation"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/tableOfContents> a skosxl:label ;
-    skosxl:literalForm "Table of Contents" .
+    skosxl:literalForm "Table of Contents"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/tactileGraphic> a skosxl:label ;
-    skosxl:literalForm "Tactile Graphic" .
+    skosxl:literalForm "Tactile Graphic"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/taggedPDF> a skosxl:label ;
-    skosxl:literalForm "Tagged PDF" .
+    skosxl:literalForm "Tagged PDF"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/timingControl> a skosxl:label ;
-    skosxl:literalForm "Timing Control" .
+    skosxl:literalForm "Timing Control"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/transcript> a skosxl:label ;
-    skosxl:literalForm "Transcript" .
+    skosxl:literalForm "Transcript"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/ttsMarkup> a skosxl:label ;
-    skosxl:literalForm "TTS Markup" .
+    skosxl:literalForm "TTS Markup"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/unlocked> a skosxl:label ;
-    skosxl:literalForm "Unlocked" .
+    skosxl:literalForm "Unlocked"@en .
