@@ -316,7 +316,7 @@
 #=====================
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/alternativeText> a skosxl:label ;
-    skosxl:literalForm "Alternative Type" .
+    skosxl:literalForm "Alternative Text" .
 
 <http://purl.org/dcx/lrmi-vocabs/accessibilityFeature/annotations> a skosxl:label ;
     skosxl:literalForm "Annotations" .
