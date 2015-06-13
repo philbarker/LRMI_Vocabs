@@ -112,7 +112,7 @@
      
 <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/JavaAccessibility> a skos:Concept ;
     skos:prefLabel "Java Accessibility"@en ;
-    skosxl:preflabel <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/;abel-JavaAccessibility> ;    
+    skosxl:preflabel <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/label-JavaAccessibility> ;    
     skos:altLabel "JavaAccessibility"@en ;
     skos:definition "@@@"@en ;
     dcterms:source <http://www.w3.org/wiki/WebSchemas/Accessibility>, <http://www.a11ymetadata.org/the-specification/>,
@@ -150,7 +150,7 @@
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/> .
     
 <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/label-MSAA> a skosxl:label ;
-    skosxl:literalForm "MSAA" . 
+    skosxl:literalForm "MSAA"@en . 
        
 <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/UIAutomation> a skos:Concept ;
     skos:prefLabel "UI Automation"@en ;
@@ -164,4 +164,4 @@
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/> .
     
 <http://purl.org/dcx/lrmi-vocabs/accessibilityAPI/label-UIAutomation> a skosxl:label ;
-    skosxl:literalForm "UI Automation" .                            
+    skosxl:literalForm "UI Automation"@en .                            
