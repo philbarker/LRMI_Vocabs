@@ -12,15 +12,15 @@
 
 <http://purl.org/dcx/lrmi-vocabs/alignmentType/AT001> a skos:Concept ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "assesses"@en .
+    skos:prefLabel "assessesCompetency"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/alignmentType/AT002> a skos:Concept ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "teaches"@en .
+    skos:prefLabel "teachesCompetency"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/alignmentType/AT003> a skos:Concept ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "requires"@en .
+    skos:prefLabel "requiresCompetency"@en .
 
 <http://purl.org/dcx/lrmi-vocabs/alignmentType/AT004> a skos:Concept ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
