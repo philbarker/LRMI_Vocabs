@@ -5,35 +5,73 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix alignment: <http://purl.org/dcx/lrmi-vocabs/alignmentType/> .
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/> a skos:ConceptScheme ;
+alignment: a skos:ConceptScheme ;
     dc:description "Describes the types of relationships between a learning resource and an AlighmentObject."@en ;
-    dc:title "LRMI Alignment Type Vocabulary"@en .
+    dc:title "LRMI Alignment Type Vocabulary"@en ;
+    dcterms:created "2015-01-21"^^xsd:date ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .    
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/AT001> a skos:Concept ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "assessesCompetency"@en .
+alignment:assesses: a skos:Concept ;
+    skos:inScheme alignment: ;
+    skos:prefLabel "assesses"@en ;
+    skosxl:preflabel alignment:label-assesses . 
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/AT002> a skos:Concept ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "teachesCompetency"@en .
+alignment:teaches a skos:Concept ;
+    skos:inScheme alignment: ;
+    skos:prefLabel "teaches"@en ;
+    skosxl:preflabel alignment:label-teaches .         
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/AT003> a skos:Concept ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "requiresCompetency"@en .
+alignment:requires a skos:Concept ;
+    skos:inScheme alignment: ;
+    skos:prefLabel "requires"@en ;
+    skosxl:preflabel alignment:label-requires .    
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/AT004> a skos:Concept ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "text complexity"@en .
+alignment:textComplexity a skos:Concept ;
+    skos:inScheme alignment: ;
+    skos:prefLabel "text complexity"@en ;
+    skosxl:preflabel alignment:label-textComplexity .    
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/AT005> a skos:Concept ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "reading level"@en .
+alignment:readingLevel a skos:Concept ;
+    skos:inScheme alignment: ;
+    skos:prefLabel "reading level"@en ;
+    skosxl:preflabel alignment:label-readingLevel .    
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/AT006> a skos:Concept ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "educational subject"@en .
+alignment:educationalSubject a skos:Concept ;
+    skos:inScheme alignment: ;
+    skos:prefLabel "educational subject"@en ;
+    skosxl:preflabel alignment:label-educationalSubject .     
 
-<http://purl.org/dcx/lrmi-vocabs/alignmentType/AT007> a skos:Concept ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/alignmentType/> ;
-    skos:prefLabel "educational level"@en .
+alignment:educationalLevel a skos:Concept ;
+    skos:inScheme alignment: ;
+    skos:prefLabel "educational level"@en ;
+    skosxl:preflabel alignment:label-educationalLevel .    
+    
+#============================= 
+# EXTENDED LABELS
+#=============================    
+    
+alignment:label-assesses a skosxl:label ;
+    skosxl:literalForm "assesses"@en . 
+    
+alignment:label-teaches a skosxl:label ;
+    skosxl:literalForm "teaches"@en .   
+        
+alignment:label-requires a skosxl:label ;
+    skosxl:literalForm "requires"@en .   
+        
+alignment:label-textComplexity a skosxl:label ;
+    skosxl:literalForm "text complexity"@en .
+        
+alignment:label-readingLevel a skosxl:label ;
+    skosxl:literalForm "reading level"@en .  
+        
+alignment:label-educationalSubject a skosxl:label ;
+    skosxl:literalForm "educational subject"@en .
+        
+alignment:label-educationalLevel a skosxl:label ;
+    skosxl:literalForm "educational level"@en .                             
