@@ -24,12 +24,8 @@ edUse:instruction a skos:Concept ;
     skos:definition """Primary purpose of the resource is to support the instructional 
         process, student learning, or to provide information about the curriculum."""@en ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    skos:note """Based on the CEDS Learning Resource Educational Use term 
-        \"Curriculum/Instruction\" at https://ceds.ed.gov/element/001002."""@en ;
+    dcterms:source <https://ceds.ed.gov/element/001002> ;
     vs:term_status "unstable" .
-    
-edUse:label-instruction a skosxl:label ;
-    skosxl:literalForm "instruction"@en .
     
 edUse:assessment a skos:Concept ;
     skos:prefLabel "assessment"@en ;
@@ -37,12 +33,8 @@ edUse:assessment a skos:Concept ;
     skos:definition """Primary purpose of the resource is to evaluate learning, either 
         before or after instruction occurs."""@en ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    skos:note """Based on the CEDS Learning Resource Educational Use term \"Assessment\" at 
-        https://ceds.ed.gov/element/001002."""@en ;
-    vs:term_status "unstable" .
-    
-edUse:label-assessment a skosxl:label ;
-    skosxl:literalForm "assessment"@en .    
+    dcterms:source <https://ceds.ed.gov/element/001002> ;
+    vs:term_status "unstable" .   
 
 edUse:professionalDevelopment a skos:Concept ;
     skos:prefLabel "professional development"@en ;
@@ -50,9 +42,16 @@ edUse:professionalDevelopment a skos:Concept ;
     skos:definition """Primary purpose of the resource is to provide instruction for a teacher 
         or other education professional."""@en ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    skos:note """Based on the CEDS Learning Resource Educational Use term \"Professional 
-        Development\" at https://ceds.ed.gov/element/001002."""@en ;  
+    dcterms:source <https://ceds.ed.gov/element/001002> ;  
     vs:term_status "unstable" .
+    
+# EXTENDED LABELS    
 
+edUse:label-instruction a skosxl:label ;
+    skosxl:literalForm "instruction"@en .
+        
+edUse:label-assessment a skosxl:label ;
+    skosxl:literalForm "assessment"@en .
+    
 edUse:label-professionalDevelopment a skosxl:label ;
     skosxl:literalForm "professional development"@en .
