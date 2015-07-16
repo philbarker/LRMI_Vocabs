@@ -11,6 +11,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 
 # Defines a set of top-level concepts of Educational Use
+# TESTING CHANGES USING GITHUB FOR MAC
 
 edUse: a skos:ConceptScheme ;
     dc:title "LRMI Educational Use vocabulary" ;
