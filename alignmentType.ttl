@@ -7,71 +7,106 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix alignment: <http://purl.org/dcx/lrmi-vocabs/alignmentType/> .
 
 alignment: a skos:ConceptScheme ;
-    dc:description "Describes the types of relationships between a learning resource and an AlighmentObject."@en ;
-    dc:title "LRMI Alignment Type Vocabulary"@en ;
+    dc:description """Describes the types of relationships between a learning resource and 
+        an AlighmentObject."""@en-US ;
+    dc:title "LRMI Alignment Type Vocabulary"@en-US ;
     dcterms:created "2015-01-21"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .    
 
 alignment:assesses: a skos:Concept ;
+    skos:prefLabel "assesses"@en-US ;
+    skosxl:preflabel alignment:label-assesses ;    
+    skos:definition """The origin of the association may be used to assess the destination 
+        of the association."""@en-US ;
     skos:inScheme alignment: ;
-    skos:prefLabel "assesses"@en ;
-    skosxl:preflabel alignment:label-assesses . 
+    vs:term_status "unstable" .
 
 alignment:teaches a skos:Concept ;
+    skos:prefLabel "teaches"@en-US ;
+    skosxl:preflabel alignment:label-teaches ;    
+    skos:definition """The resource or method at the origin of the association may be used 
+        to teach the competency at the destination of the association."""@en-US ;
     skos:inScheme alignment: ;
-    skos:prefLabel "teaches"@en ;
-    skosxl:preflabel alignment:label-teaches .         
+    vs:term_status "unstable" .            
 
 alignment:requires a skos:Concept ;
-    skos:inScheme alignment: ;
-    skos:prefLabel "requires"@en ;
-    skosxl:preflabel alignment:label-requires .    
+    skos:prefLabel "requires"@en-US ;
+    skosxl:preflabel alignment:label-requires ;    
+    skos:definition """The origin of the association requires the destination of the association 
+        to support its function, delivery, or coherence."""@en-US ;
+    skos:inScheme alignment: ;    
+    vs:term_status "unstable" .    
+   
 
 alignment:textComplexity a skos:Concept ;
-    skos:inScheme alignment: ;
-    skos:prefLabel "text complexity"@en ;
-    skosxl:preflabel alignment:label-textComplexity .    
+    skos:prefLabel "text complexity"@en-US ;
+    skosxl:preflabel alignment:label-textComplexity ;    
+    skos:definition """The destination of the association defines a level or range, measuring 
+        the ease in which text can be read and understood, for text used within the resource at 
+        the origin of the association."""@en-US ;
+    skos:inScheme alignment: ;     
+    vs:term_status "unstable" .
 
 alignment:readingLevel a skos:Concept ;
-    skos:inScheme alignment: ;
-    skos:prefLabel "reading level"@en ;
-    skosxl:preflabel alignment:label-readingLevel .    
+    skos:prefLabel "reading level"@en-US ;
+    skosxl:preflabel alignment:label-readingLevel ;    
+    skos:definition """The destination of the association defines a level or range of ability 
+        expected for a person using the resource at the origin of the association."""@en-US ;
+    skos:inScheme alignment: ;     
+    vs:term_status "unstable" .
 
 alignment:educationalSubject a skos:Concept ;
+    skos:prefLabel "educational subject"@en-US ;
+    skosxl:preflabel alignment:label-educationalSubject ;    
+    skos:definition """The destination of the association defines a topic or subject from a 
+        controlled vocabulary."""@en-US ;
     skos:inScheme alignment: ;
-    skos:prefLabel "educational subject"@en ;
-    skosxl:preflabel alignment:label-educationalSubject .     
+    vs:term_status "unstable" .  
+    
+alignment:cognitiveComplexity: a skos:Concept ;
+    skos:prefLabel "cognitive complexity"@en-US ;
+    skosxl:preflabel alignment:label-cognitiveComplexity ;    
+    skos:definition """@@@."""@en-US ;
+    skos:inScheme alignment: ;
+    vs:term_status "unstable" .      
 
 alignment:educationalLevel a skos:Concept ;
+    skos:prefLabel "educational level"@en-US ;
+    skosxl:preflabel alignment:label-educationalLevel ;    
+    skos:definition """he destination of the association defines an education level from a 
+        controlled vocabulary."""@en-US ;
     skos:inScheme alignment: ;
-    skos:prefLabel "educational level"@en ;
-    skosxl:preflabel alignment:label-educationalLevel .    
+    vs:term_status "unstable" .         
     
 #============================= 
 # EXTENDED LABELS
 #=============================    
     
 alignment:label-assesses a skosxl:label ;
-    skosxl:literalForm "assesses"@en . 
+    skosxl:literalForm "assesses"@en-US .
+    
+alignment:label-cognitiveComplexity a skosxl:label ;
+    skosxl:literalForm "cognitive complexity"@en-US .     
     
 alignment:label-teaches a skosxl:label ;
-    skosxl:literalForm "teaches"@en .   
+    skosxl:literalForm "teaches"@en-US .   
         
 alignment:label-requires a skosxl:label ;
-    skosxl:literalForm "requires"@en .   
+    skosxl:literalForm "requires"@en-US .   
         
 alignment:label-textComplexity a skosxl:label ;
-    skosxl:literalForm "text complexity"@en .
+    skosxl:literalForm "text complexity"@en-US .
         
 alignment:label-readingLevel a skosxl:label ;
-    skosxl:literalForm "reading level"@en .  
+    skosxl:literalForm "reading level"@en-US .  
         
 alignment:label-educationalSubject a skosxl:label ;
-    skosxl:literalForm "educational subject"@en .
+    skosxl:literalForm "educational subject"@en-US .
         
 alignment:label-educationalLevel a skosxl:label ;
-    skosxl:literalForm "educational level"@en .                             
+    skosxl:literalForm "educational level"@en-US .                             

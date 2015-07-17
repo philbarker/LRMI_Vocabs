@@ -45,7 +45,9 @@ edUse:professionalDevelopment a skos:Concept ;
     dcterms:source <https://ceds.ed.gov/element/001002> ;  
     vs:term_status "unstable" .
     
-# EXTENDED LABELS    
+#============================= 
+# EXTENDED LABELS
+#============================= 
 
 edUse:label-instruction a skosxl:label ;
     skosxl:literalForm "instruction"@en .
