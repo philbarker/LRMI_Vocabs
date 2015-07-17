@@ -11,8 +11,7 @@
 @prefix alignment: <http://purl.org/dcx/lrmi-vocabs/alignmentType/> .
 
 alignment: a skos:ConceptScheme ;
-    dc:description """Describes the types of relationships between a learning resource and 
-        an AlighmentObject."""@en-US ;
+    dc:description "Describes the types of relationships between a learning resource and an AlighmentObject."@en-US ;
     dc:title "LRMI Alignment Type Vocabulary"@en-US ;
     dcterms:created "2015-01-21"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
@@ -21,65 +20,66 @@ alignment: a skos:ConceptScheme ;
 alignment:assesses: a skos:Concept ;
     skos:prefLabel "assesses"@en-US ;
     skosxl:preflabel alignment:label-assesses ;    
-    skos:definition """The origin of the association may be used to assess the destination 
-        of the association."""@en-US ;
+    skos:definition "The learning resource being described may be used to assess the competency being referenced."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#Assesses."@en-US ;
     skos:inScheme alignment: ;
     vs:term_status "unstable" .
 
 alignment:teaches a skos:Concept ;
     skos:prefLabel "teaches"@en-US ;
     skosxl:preflabel alignment:label-teaches ;    
-    skos:definition """The resource or method at the origin of the association may be used 
-        to teach the competency at the destination of the association."""@en-US ;
+    skos:definition "The learning resource being described may be used to teach the competency being referenced."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#Teaches."@en-US ;   
     skos:inScheme alignment: ;
     vs:term_status "unstable" .            
 
 alignment:requires a skos:Concept ;
     skos:prefLabel "requires"@en-US ;
     skosxl:preflabel alignment:label-requires ;    
-    skos:definition """The origin of the association requires the destination of the association 
-        to support its function, delivery, or coherence."""@en-US ;
+    skos:definition "The learning resouce being described requires the competency being referenced to support its function, delivery, or coherence."@en-US ;
     skos:inScheme alignment: ;    
     vs:term_status "unstable" .    
    
-
 alignment:textComplexity a skos:Concept ;
     skos:prefLabel "text complexity"@en-US ;
     skosxl:preflabel alignment:label-textComplexity ;    
-    skos:definition """The destination of the association defines a level or range, measuring 
-        the ease in which text can be read and understood, for text used within the resource at 
-        the origin of the association."""@en-US ;
+    skos:definition "The resource being referenced defines a level or range that measures the ease with which text embodied in the learning resource being described can be read and understood."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#TextComplexity."@en-US ;     
+    skos:broader alignment:cognitiveComplexity ;
     skos:inScheme alignment: ;     
     vs:term_status "unstable" .
 
 alignment:readingLevel a skos:Concept ;
     skos:prefLabel "reading level"@en-US ;
     skosxl:preflabel alignment:label-readingLevel ;    
-    skos:definition """The destination of the association defines a level or range of ability 
-        expected for a person using the resource at the origin of the association."""@en-US ;
+    skos:definition "The framework being referenced defines a level or range of reading ability expected for a person using the learning resource being described."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#ReadingLevel."@en-US ;      
     skos:inScheme alignment: ;     
     vs:term_status "unstable" .
 
 alignment:educationalSubject a skos:Concept ;
     skos:prefLabel "educational subject"@en-US ;
     skosxl:preflabel alignment:label-educationalSubject ;    
-    skos:definition """The destination of the association defines a topic or subject from a 
-        controlled vocabulary."""@en-US ;
+    skos:definition "The resource being referenced defines a topic or subject of the learning resource being described."@en-US ;
+    skos:note "The resource being referenced is preferably a concept from a controlled vocabulary (i.e., concept scheme)."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#EducationalSubject."@en-US ;      
     skos:inScheme alignment: ;
     vs:term_status "unstable" .  
     
 alignment:cognitiveComplexity: a skos:Concept ;
     skos:prefLabel "cognitive complexity"@en-US ;
     skosxl:preflabel alignment:label-cognitiveComplexity ;    
-    skos:definition """@@@."""@en-US ;
+    skos:definition "The resource being referenced defines a level or range that measures the cognitive complexity of the learning resource being described."@en-US ;
+    skos:narrower alignment:textComplexity ;    
     skos:inScheme alignment: ;
     vs:term_status "unstable" .      
 
 alignment:educationalLevel a skos:Concept ;
     skos:prefLabel "educational level"@en-US ;
     skosxl:preflabel alignment:label-educationalLevel ;    
-    skos:definition """he destination of the association defines an education level from a 
-        controlled vocabulary."""@en-US ;
+    skos:definition "The resource being referenced defines an education level for which the resource being described is intended or useful."@en-US ;
+    skos:note "The resource being referenced is preferably a concept from a controlled vocabulary (i.e., concept scheme)."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#EducationalLevel."@en-US ;         
     skos:inScheme alignment: ;
     vs:term_status "unstable" .         
     
