@@ -10,11 +10,10 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
 
-# Defines a set of top-level concepts of Educational Use
-
 edUse: a skos:ConceptScheme ;
     dc:title "LRMI Educational Use vocabulary" ;
     dc:creator "LRMI Task Group (DCMI)"@en-US ;
+    dc:description "Defines a set of top-level concepts of Educational Use"@en-US ;
     dcterms:created "2015-01-21"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .      
@@ -24,7 +23,7 @@ edUse:instruction a skos:Concept ;
     skosxl:prefLabel edUse:label-instruction ;
     skos:definition "Primary purpose of the resource is to support the instructional process, student learning, or to provide information about the curriculum."@en-US ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    dcterms:source <https://ceds.ed.gov/element/001002> ;
+    dcterms:source <https://ceds.ed.gov/element/001002#CurriculumInstruction> ;
     vs:term_status "unstable" .
     
 edUse:assessment a skos:Concept ;
@@ -32,7 +31,7 @@ edUse:assessment a skos:Concept ;
     skosxl:prefLabel edUse:label-assessment ;
     skos:definition "Primary purpose of the resource is to evaluate learning, either before or after instruction occurs."@en-US ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    dcterms:source <https://ceds.ed.gov/element/001002> ;
+    dcterms:source <https://ceds.ed.gov/element/001002#Assessment> ;
     vs:term_status "unstable" .   
 
 edUse:professionalDevelopment a skos:Concept ;
@@ -40,7 +39,7 @@ edUse:professionalDevelopment a skos:Concept ;
     skosxl:prefLabel edUse:label-professionalDevelopment ;
     skos:definition "Primary purpose of the resource is to provide instruction for a teacher or other education professional."@en-US ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    dcterms:source <https://ceds.ed.gov/element/001002> ;  
+    dcterms:source <https://ceds.ed.gov/element/001002#ProfessionalDevelopment> ;  
     vs:term_status "unstable" .
     
 #============================= 
