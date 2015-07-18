@@ -14,45 +14,44 @@
 
 edUse: a skos:ConceptScheme ;
     dc:title "LRMI Educational Use vocabulary" ;
+    dc:creator "LRMI Task Group (DCMI)"@en-US ;
     dcterms:created "2015-01-21"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .      
 
 edUse:instruction a skos:Concept ;
-    skos:prefLabel "instruction"@en ;
+    skos:prefLabel "instruction"@en-US ;
     skosxl:prefLabel edUse:label-instruction ;
-    skos:definition """Primary purpose of the resource is to support the instructional 
-        process, student learning, or to provide information about the curriculum."""@en ;
+    skos:definition "Primary purpose of the resource is to support the instructional process, student learning, or to provide information about the curriculum."@en-US ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    skos:note """Based on the CEDS Learning Resource Educational Use term 
-        \"Curriculum/Instruction\" at https://ceds.ed.gov/element/001002."""@en ;
+    dcterms:source <https://ceds.ed.gov/element/001002> ;
     vs:term_status "unstable" .
-    
-edUse:label-instruction a skosxl:label ;
-    skosxl:literalForm "instruction"@en .
     
 edUse:assessment a skos:Concept ;
-    skos:prefLabel "assessment"@en ;
+    skos:prefLabel "assessment"@en-US ;
     skosxl:prefLabel edUse:label-assessment ;
-    skos:definition """Primary purpose of the resource is to evaluate learning, either 
-        before or after instruction occurs."""@en ;
+    skos:definition "Primary purpose of the resource is to evaluate learning, either before or after instruction occurs."@en-US ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    skos:note """Based on the CEDS Learning Resource Educational Use term \"Assessment\" at 
-        https://ceds.ed.gov/element/001002."""@en ;
-    vs:term_status "unstable" .
-    
-edUse:label-assessment a skosxl:label ;
-    skosxl:literalForm "assessment"@en .    
+    dcterms:source <https://ceds.ed.gov/element/001002> ;
+    vs:term_status "unstable" .   
 
 edUse:professionalDevelopment a skos:Concept ;
-    skos:prefLabel "professional development"@en ;
+    skos:prefLabel "professional development"@en-US ;
     skosxl:prefLabel edUse:label-professionalDevelopment ;
-    skos:definition """Primary purpose of the resource is to provide instruction for a teacher 
-        or other education professional."""@en ;
+    skos:definition "Primary purpose of the resource is to provide instruction for a teacher or other education professional."@en-US ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    skos:note """Based on the CEDS Learning Resource Educational Use term \"Professional 
-        Development\" at https://ceds.ed.gov/element/001002."""@en ;  
+    dcterms:source <https://ceds.ed.gov/element/001002> ;  
     vs:term_status "unstable" .
+    
+#============================= 
+# EXTENDED LABELS
+#============================= 
 
+edUse:label-instruction a skosxl:label ;
+    skosxl:literalForm "instruction"@en-US .
+        
+edUse:label-assessment a skosxl:label ;
+    skosxl:literalForm "assessment"@en-US .
+    
 edUse:label-professionalDevelopment a skosxl:label ;
-    skosxl:literalForm "professional development"@en .
+    skosxl:literalForm "professional development"@en-US .
