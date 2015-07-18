@@ -13,6 +13,7 @@
 alignment: a skos:ConceptScheme ;
     dc:description "Describes the types of relationships between a learning resource and an AlighmentObject."@en-US ;
     dc:title "LRMI Alignment Type Vocabulary"@en-US ;
+    dc:creator "LRMI Task Group (DCMI)"@en-US ; 
     dcterms:created "2015-01-21"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .    
