@@ -13,7 +13,7 @@
 edUse: a skos:ConceptScheme ;
     dc:title "LRMI Educational Use vocabulary" ;
     dc:creator "LRMI Task Group (DCMI)"@en-US ;
-    dc:description "Defines a set of top-level concepts of Educational Use"@en-US ;
+    dc:description "A concept scheme that enumerates the educational uses of a learning resource."@en-US ;
     dcterms:created "2015-01-21"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .      

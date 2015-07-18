@@ -13,7 +13,7 @@
 interactivity: a skos:ConceptScheme ;
     dc:title "Interactivity Type Vocabulary"@en-US ;
     dc:creator "LRMI Task Group (DCMI)"@en-US ;    
-    dcterms:description "Concepts defining the predominate interactivity mode of the learning resource being described."@en-US ;
+    dcterms:description "A concept scheme that defines the predominate interactivity mode of the learning resource being described."@en-US ;
     dcterms:source "Based on the IEEE Learning Object Metadata standard (IEEE/LOM - IEEE 1484.12.1-202)."@en-US ;
     adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> ;        
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
