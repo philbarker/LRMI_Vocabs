@@ -15,7 +15,7 @@ resourceType: a skos:ConceptScheme ;
     dc:title "LRMI Learning Resource Type Vocabulary"@en-US ;
     dc:creator "LRMI Task Group (DCMI)"@en-US ;
     dcterms:created "2015-01-21"^^xsd:date ; 
-    dc:description "The predominate genre, type or kind characterizing the learning resource."@en-US ;
+    dc:description "A concept scheme defining the predominant genre, type or kind characterizing a learning resource"@en-US ;
     dc:source "Based in part on the CEDS Learning Resource Type vocabulary found at https://ceds.ed.gov/element/000928"@en-US ;
     adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .
 
@@ -52,7 +52,7 @@ resourceType:demonstration-simulation a skos:Concept ;
     vs:term_status "unstable" .
     
 resourceType:educatorCurriculum a skos:Concept ;
-    skos:prefLabel "educator curriculum Guide"@en-US ;
+    skos:prefLabel "educator curriculum guide"@en-US ;
     skosxl:prefLabel resourceType:label-educatorCurriculum ;
     skos:definition "A document that defines what concepts should be taught and/or how a concept should be taught effectively."@en-US ;
     skos:inScheme resourceType: ;
@@ -78,7 +78,8 @@ resourceType:images-visuals a skos:Concept ;
 resourceType:interim-summativeAssessment a skos:Concept ;
     skos:prefLabel "interim/summative assessment"@en-US ;
     skosxl:prefLabel resourceType:label-interim-summativeAssessment ;
-    skos:definition "An assessment instrument used to evaluate student learning at the end of an instructional unit by comparing it against some standard or benchmark. A learning resource of this typemay be an \"assessment form,\" i.e. one instance of the assessment instrument that can equate scores with another instance of the same assessment."@en-US ;
+    skos:definition "An assessment instrument used to evaluate student learning at the end of an instructional unit by comparing it against some standard or benchmark."@en-US ;
+    skos:note "A learning resource of this type may be an \"assessment form,\" i.e. one instance of the assessment instrument that can equate scores with another instance of the same assessment."@en-US ;
     skos:inScheme resourceType: ;
     dcterms:source <https://ceds.ed.gov/element/000928#InterimSummativeAssessment> ;
     vs:term_status "unstable" .    
@@ -94,7 +95,7 @@ resourceType:learningActivity a skos:Concept ;
 resourceType:lesson a skos:Concept ;
     skos:prefLabel "lesson"@en-US ;
     skosxl:prefLabel resourceType:label-lesson ;
-    skos:definition "A detailed description of the course of instruction for a short period of time that is used by a teacher to guide class instruction.  A Unit contains one or more lessons."@en-US ;
+    skos:definition "A detailed description of the course of instruction for a short period of time that is used by a teacher to guide class instruction.  A unit contains one or more lessons."@en-US ;
     skos:inScheme resourceType: ;
     dcterms:source <https://ceds.ed.gov/element/000928#Lesson> ;
     vs:term_status "unstable" .    
