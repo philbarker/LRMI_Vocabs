@@ -11,7 +11,7 @@
 @prefix alignment: <http://purl.org/dcx/lrmi-vocabs/alignmentType/> .
 
 alignment: a skos:ConceptScheme ;
-    dc:description "Describes the types of relationships between a learning resource and an AlighmentObject."@en-US ;
+    dc:description "A concept scheme that defines the types of relationships between a learning resource and a node in an educational framework."@en-US ;
     dc:title "LRMI Alignment Type Vocabulary"@en-US ;
     dc:creator "LRMI Task Group (DCMI)"@en-US ; 
     dcterms:created "2015-01-21"^^xsd:date ;
@@ -37,7 +37,7 @@ alignment:teaches a skos:Concept ;
 alignment:requires a skos:Concept ;
     skos:prefLabel "requires"@en-US ;
     skosxl:preflabel alignment:label-requires ;    
-    skos:definition "The learning resouce being described requires the competency being referenced to support its function, delivery, or coherence."@en-US ;
+    skos:definition "The learning resource being described requires the resource being referenced to support its function, delivery, or coherence."@en-US ;
     skos:inScheme alignment: ;    
     vs:term_status "unstable" .    
    
@@ -53,7 +53,7 @@ alignment:textComplexity a skos:Concept ;
 alignment:readingLevel a skos:Concept ;
     skos:prefLabel "reading level"@en-US ;
     skosxl:preflabel alignment:label-readingLevel ;    
-    skos:definition "The framework being referenced defines a level or range of reading ability expected for a person using the learning resource being described."@en-US ;
+    skos:definition "The resource being referenced defines a level or range of reading ability expected for a person using the learning resource being described."@en-US ;
     dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#ReadingLevel."@en-US ;      
     skos:inScheme alignment: ;     
     vs:term_status "unstable" .
