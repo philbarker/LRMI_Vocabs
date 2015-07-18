@@ -15,6 +15,7 @@
 audRole: a skos:ConceptScheme;
   dc:title "LRMI Educational Audience Role Vocabulary" ;
   dc:creator "LRMI Task Group (DCMI)"@en-US ;
+  dc:description: "A concept scheme that defines the primary or intended roles of the audience (beneficiary) of the resource being described."@en-US ;
   dcterms:created "2015-01-21"^^xsd:date ;
   dcterms:license <http://creativecommons.org/licenses/by/4.0/ ;
   adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .  
@@ -22,7 +23,7 @@ audRole: a skos:ConceptScheme;
 audRole:administrator a skos:Concept;
   skos:prefLabel "administrator"@en-US;
   skosxl:preflabel audRole:label-administrator ;  
-  skos:definition "A district or school level person of authority and responsibility"@en-US;
+  skos:definition "A district or school level person of authority and responsibility."@en-US;
   skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
   vs:term_status "unstable" .
 
