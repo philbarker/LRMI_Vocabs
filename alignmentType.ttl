@@ -25,6 +25,57 @@ alignment:assesses: a skos:Concept ;
     dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#Assesses."@en-US ;
     skos:inScheme alignment: ;
     vs:term_status "unstable" .
+    
+alignment:cognitiveComplexity: a skos:Concept ;
+    skos:prefLabel "cognitive complexity"@en-US ;
+    skosxl:preflabel alignment:label-cognitiveComplexity ;    
+    skos:definition "The point in the framework being referenced defines a level or range that measures the cognitive complexity of the learning resource being described."@en-US ;
+    skos:narrower alignment:textComplexity ;    
+    skos:inScheme alignment: ;
+    vs:term_status "unstable" . 
+
+alignment:educationalLevel a skos:Concept ;
+    skos:prefLabel "educational level"@en-US ;
+    skosxl:preflabel alignment:label-educationalLevel ;    
+    skos:definition "The resource being referenced defines an education level for which the resource being described is intended or useful."@en-US ;
+    skos:note "The point in the framework being referenced is preferably a concept from a controlled vocabulary (i.e., concept scheme)."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#EducationalLevel."@en-US ;         
+    skos:inScheme alignment: ;
+    vs:term_status "unstable" . 
+    
+alignment:educationalSubject a skos:Concept ;
+    skos:prefLabel "educational subject"@en-US ;
+    skosxl:preflabel alignment:label-educationalSubject ;    
+    skos:definition "The point in the framework being referenced defines the subject context of the learning resource being described."@en-US ;
+    skos:scopeNote "The educational subject identifies the educational context of the resource being described such as \"math\", \"science\", \"physics\", \"algebra\", and \"English language arts\".  To identify the particular topic(s), or aboutness, of the resource being described--e.g., \"Pythagorean theorem\", \"Abraham Lincoln\", \"Ayers Rock\"--use the schema.org/about property."@en ;
+    skos:note "The resource being referenced is preferably a concept from a controlled vocabulary (i.e., concept scheme)."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#EducationalSubject."@en-US ;      
+    skos:inScheme alignment: ;
+    vs:term_status "unstable" .
+    
+alignment:prerequisite a skos:Concept ;
+    skos:prefLabel "prerequisite"@en-US ;
+    skosxl:preflabel alignment:label-prerequisite ;    
+    skos:definition "The competency being referenced is a learning prerequisite to the effective outcome of  the learning resource being described."@en-US ;
+    skos:note "The point in the framework being referenced is preferably a concept from a controlled vocabulary (i.e., concept scheme)."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000715."@en-US ;         
+    skos:inScheme alignment: ;
+    vs:term_status "unstable" .        
+    
+alignment:readingLevel a skos:Concept ;
+    skos:prefLabel "reading level"@en-US ;
+    skosxl:preflabel alignment:label-readingLevel ;    
+    skos:definition "The resource being referenced defines a level or range of reading ability expected for a person using the learning resource being described."@en-US ;
+    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#ReadingLevel."@en-US ;      
+    skos:inScheme alignment: ;     
+    vs:term_status "unstable" .
+    
+ alignment:requires a skos:Concept ;
+    skos:prefLabel "requires"@en-US ;
+    skosxl:preflabel alignment:label-requires ;    
+    skos:definition "The effective use of the learning resource being described requires simultaneous engagement with the point in the educational framework being referenced."@en-US ;
+    skos:inScheme alignment: ;    
+    vs:term_status "unstable" .               
 
 alignment:teaches a skos:Concept ;
     skos:prefLabel "teaches"@en-US ;
@@ -32,14 +83,7 @@ alignment:teaches a skos:Concept ;
     skos:definition "The learning resource being described may be used to teach the competency being referenced."@en-US ;
     dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#Teaches."@en-US ;   
     skos:inScheme alignment: ;
-    vs:term_status "unstable" .            
-
-alignment:requires a skos:Concept ;
-    skos:prefLabel "requires"@en-US ;
-    skosxl:preflabel alignment:label-requires ;    
-    skos:definition "The learning resource being described requires the resource being referenced to support its function, delivery, or coherence."@en-US ;
-    skos:inScheme alignment: ;    
-    vs:term_status "unstable" .    
+    vs:term_status "unstable" .                
    
 alignment:textComplexity a skos:Concept ;
     skos:prefLabel "text complexity"@en-US ;
@@ -48,41 +92,7 @@ alignment:textComplexity a skos:Concept ;
     dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#TextComplexity."@en-US ;     
     skos:broader alignment:cognitiveComplexity ;
     skos:inScheme alignment: ;     
-    vs:term_status "unstable" .
-
-alignment:readingLevel a skos:Concept ;
-    skos:prefLabel "reading level"@en-US ;
-    skosxl:preflabel alignment:label-readingLevel ;    
-    skos:definition "The resource being referenced defines a level or range of reading ability expected for a person using the learning resource being described."@en-US ;
-    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#ReadingLevel."@en-US ;      
-    skos:inScheme alignment: ;     
-    vs:term_status "unstable" .
-
-alignment:educationalSubject a skos:Concept ;
-    skos:prefLabel "educational subject"@en-US ;
-    skosxl:preflabel alignment:label-educationalSubject ;    
-    skos:definition "The resource being referenced defines a topic or subject of the learning resource being described."@en-US ;
-    skos:note "The resource being referenced is preferably a concept from a controlled vocabulary (i.e., concept scheme)."@en-US ;
-    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#EducationalSubject."@en-US ;      
-    skos:inScheme alignment: ;
-    vs:term_status "unstable" .  
-    
-alignment:cognitiveComplexity: a skos:Concept ;
-    skos:prefLabel "cognitive complexity"@en-US ;
-    skosxl:preflabel alignment:label-cognitiveComplexity ;    
-    skos:definition "The resource being referenced defines a level or range that measures the cognitive complexity of the learning resource being described."@en-US ;
-    skos:narrower alignment:textComplexity ;    
-    skos:inScheme alignment: ;
-    vs:term_status "unstable" .      
-
-alignment:educationalLevel a skos:Concept ;
-    skos:prefLabel "educational level"@en-US ;
-    skosxl:preflabel alignment:label-educationalLevel ;    
-    skos:definition "The resource being referenced defines an education level for which the resource being described is intended or useful."@en-US ;
-    skos:note "The resource being referenced is preferably a concept from a controlled vocabulary (i.e., concept scheme)."@en-US ;
-    dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#EducationalLevel."@en-US ;         
-    skos:inScheme alignment: ;
-    vs:term_status "unstable" .         
+    vs:term_status "unstable" .             
     
 #============================= 
 # EXTENDED LABELS
@@ -92,22 +102,26 @@ alignment:label-assesses a skosxl:label ;
     skosxl:literalForm "assesses"@en-US .
     
 alignment:label-cognitiveComplexity a skosxl:label ;
-    skosxl:literalForm "cognitive complexity"@en-US .     
+    skosxl:literalForm "cognitive complexity"@en-US . 
     
-alignment:label-teaches a skosxl:label ;
-    skosxl:literalForm "teaches"@en-US .   
-        
-alignment:label-requires a skosxl:label ;
-    skosxl:literalForm "requires"@en-US .   
-        
-alignment:label-textComplexity a skosxl:label ;
-    skosxl:literalForm "text complexity"@en-US .
-        
-alignment:label-readingLevel a skosxl:label ;
-    skosxl:literalForm "reading level"@en-US .  
-        
+alignment:label-educationalLevel a skosxl:label ;
+    skosxl:literalForm "educational level"@en-US .    
+    
 alignment:label-educationalSubject a skosxl:label ;
     skosxl:literalForm "educational subject"@en-US .
+    
+alignment:label-prerequisite a skosxl:label ;
+    skosxl:literalForm "prerequisite"@en-US .            
+    
+alignment:label-readingLevel a skosxl:label ;
+    skosxl:literalForm "reading level"@en-US .       
         
-alignment:label-educationalLevel a skosxl:label ;
-    skosxl:literalForm "educational level"@en-US .                             
+alignment:label-requires a skosxl:label ;
+    skosxl:literalForm "requires"@en-US .
+    
+alignment:label-teaches a skosxl:label ;
+    skosxl:literalForm "teaches"@en-US .       
+        
+alignment:label-textComplexity a skosxl:label ;
+    skosxl:literalForm "text complexity"@en-US .     
+                                    

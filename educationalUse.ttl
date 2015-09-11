@@ -16,15 +16,7 @@ edUse: a skos:ConceptScheme ;
     dc:description "A concept scheme that enumerates the educational uses of a learning resource."@en-US ;
     dcterms:created "2015-01-21"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .      
-
-edUse:instruction a skos:Concept ;
-    skos:prefLabel "instruction"@en-US ;
-    skosxl:prefLabel edUse:label-instruction ;
-    skos:definition "Primary purpose of the resource is to support the instructional process, student learning, or to provide information about the curriculum."@en-US ;
-    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
-    dcterms:source <https://ceds.ed.gov/element/001002#CurriculumInstruction> ;
-    vs:term_status "unstable" .
+    adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .
     
 edUse:assessment a skos:Concept ;
     skos:prefLabel "assessment"@en-US ;
@@ -32,7 +24,15 @@ edUse:assessment a skos:Concept ;
     skos:definition "Primary purpose of the resource is to evaluate learning, either before or after instruction occurs."@en-US ;
     skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
     dcterms:source <https://ceds.ed.gov/element/001002#Assessment> ;
-    vs:term_status "unstable" .   
+    vs:term_status "unstable" .           
+
+edUse:instruction a skos:Concept ;
+    skos:prefLabel "instruction"@en-US ;
+    skosxl:prefLabel edUse:label-instruction ;
+    skos:definition "Primary purpose of the resource is to support the instructional process, student learning, or to provide information about the curriculum."@en-US ;
+    skos:inScheme <http://purl.org/dcx/lrmi-vocabs/edUse/> ;
+    dcterms:source <https://ceds.ed.gov/element/001002#CurriculumInstruction> ;
+    vs:term_status "unstable" .  
 
 edUse:professionalDevelopment a skos:Concept ;
     skos:prefLabel "professional development"@en-US ;
