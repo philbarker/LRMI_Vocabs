@@ -23,7 +23,7 @@ audRole: a skos:ConceptScheme;
 audRole:administrator a skos:Concept;
   skos:prefLabel "administrator"@en-US;
   skosxl:preflabel audRole:label-administrator ;  
-  skos:definition "A district or school level person of authority and responsibility."@en-US;
+  skos:definition "A regional or school level person with administrative authority and responsibility."@en-US;
   skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
   vs:term_status "unstable" .
 
