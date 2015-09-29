@@ -9,19 +9,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix interactivity: <http://purl.org/dcx/lrmi-vocabs/interactivityType/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
 
 interactivity: a skos:ConceptScheme ;
     dc:title "Interactivity Type Vocabulary"@en-US ;
     dc:creator "LRMI Task Group (DCMI)"@en-US ;    
     dcterms:description "A concept scheme that defines the predominate interactivity mode of the learning resource being described."@en-US ;
     dcterms:source "Based on the IEEE Learning Object Metadata standard (IEEE/LOM - IEEE 1484.12.1-202)."@en-US ;
-    adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> ;        
+    dcterms:dateSubmitted "2015-01-21"^^xsd:date ;    
+    adms:status bibo:draft ;       
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
 
 interactivity:active a skos:Concept ;
     skos:prefLabel "active"@en-US ;
     skosxl:preflabel interactivity:label-active ;   
-    skos:definition Learning that engages and challenges the learner's thinking using real-life and imaginary situations taking advantage of the opportunities for learning presented by investigating, exploring, events, and life experiences."@en-US ;
+    skos:definition "Learning that engages and challenges the learner's thinking using real-life and imaginary situations taking advantage of the opportunities for learning presented by investigating, exploring, events, and life experiences."@en-US ;
     dcterms:source "Based on the IEEE Learning Object Metadata standard (IEEE 1484.12.1-202 (LOMv1.0))."@en-US ;
     skos:inScheme interactivity: ;
     vs:term_status "unstable" .
@@ -37,7 +39,7 @@ interactivity:expositive a skos:Concept ;
 interactivity:mixed a skos:Concept ;
     skos:prefLabel "mixed"@en-US ;
     skosxl:preflabel interactivity:label-mixed ;
-    skos:definition "Instructional interactions comprised of a mix of active learning and expositive approaches." (OED)."@en-US ;
+    skos:definition "Instructional interactions comprised of a mix of active learning and expositive approaches."@en-US ;
     dcterms:source "Based on IEEE Learning Object Metadata standard (IEEE 1484.12.1-202 (LOMv1.0))."@en-US ;
     skos:inScheme interactivity: ;    
     vs:term_status "unstable" .

@@ -11,56 +11,43 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
 
 audRole: a skos:ConceptScheme;
   dc:title "LRMI Educational Audience Role Vocabulary" ;
   dc:creator "LRMI Task Group (DCMI)"@en-US ;
   dc:description: "A concept scheme that defines the primary or intended roles of the audience (beneficiary) of the resource being described."@en-US ;
-  dcterms:created "2015-01-21"^^xsd:date ;
-  dcterms:license <http://creativecommons.org/licenses/by/4.0/ ;
-  adms:status <http://purl.org/dcx/lrmi-vocabs/docStatus/draft> .  
+  dcterms:dateSubmitted "2015-01-21"^^xsd:date ;
+  dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+  adms:status bibo:draft .  
   
 audRole:administrator a skos:Concept;
   skos:prefLabel "administrator"@en-US;
   skosxl:preflabel audRole:label-administrator ;  
   skos:definition "A regional or school level person with administrative authority and responsibility."@en-US;
-  skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
-  vs:term_status "unstable" .
-
-audRole:mentor a skos:Concept;
-  skos:prefLabel "mentor"@en-US;
-  skosxl:preflabel audRole:label-mentor ;   
-  skos:definition "Someone who advises, trains, supports, and/or guides."@en-US;
-  skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
+  skos:inScheme audRole: ;
   vs:term_status "unstable" .
 
 audRole:generalPublic a skos:Concept;
   skos:prefLabel "general public"@en-US;
   skosxl:preflabel audRole:label-generalPublic ;   
   skos:definition "The Public at large."@en-US;
-  skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
+  dcterms:dateSubmitted "2015-01-21"^^xsd:date ;
+  skos:inScheme audRole: ;
   vs:term_status "unstable" .
+  
+audRole:mentor a skos:Concept;
+  skos:prefLabel "mentor"@en-US;
+  skosxl:preflabel audRole:label-mentor ;   
+  skos:definition "Someone who advises, trains, supports, and/or guides."@en-US;
+  skos:inScheme audRole: ;
+  vs:term_status "unstable" .  
 
 audRole:parent a skos:Concept;
   skos:prefLabel "parent"@en-US;
   skosxl:preflabel audRole:label-parent ;   
-  skos:definition "A parent or legal guardian."@en-US;
-  skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
-  vs:term_status "unstable" .
-       
-audRole:professional a skos:Concept;
-  skos:prefLabel "professional"@en-US;
-  skosxl:preflabel audRole:label-professional ;   
-  skos:definition "Someone already practicing a profession; an industry partner, or professional development trainer."@en-US;
-  skos:inScheme <http://purl.org/dcx/educationalAudienceRole/>;
-  vs:term_status "unstable" .
-       
-audRole:student a skos:Concept;
-  skos:prefLabel "student"@en-US;
-  skosxl:preflabel audRole:label-student ;   
-  skos:definition "The learner."@en-US;
-  skos:narrower audRole:peer-tutor;
-  skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
+  skos:definition "A father, mother, or legal guardian."@en-US;
+  skos:inScheme audRole: ;
   vs:term_status "unstable" .
   
 audRole:peerTutor a skos:Concept;
@@ -68,14 +55,29 @@ audRole:peerTutor a skos:Concept;
   skosxl:preflabel audRole:label-peerTutor ;   
   skos:definition "The peer learner serving as tutor of another learner."@en-US;
   skos:broader audRole:student;
-  skos:inScheme <http://purl.org/dcx/lrmi/educationalAudienceRole/>;
+  skos:inScheme audRole: ;
+  vs:term_status "unstable" .  
+       
+audRole:professional a skos:Concept;
+  skos:prefLabel "professional"@en-US;
+  skosxl:preflabel audRole:label-professional ;   
+  skos:definition "Someone already practicing a profession; an industry partner, or professional development trainer."@en-US;
+  skos:inScheme audRole: ;
+  vs:term_status "unstable" .
+       
+audRole:student a skos:Concept;
+  skos:prefLabel "student"@en-US;
+  skosxl:preflabel audRole:label-student ;   
+  skos:definition "The learner."@en-US;
+  skos:narrower audRole:peer-tutor;
+  skos:inScheme audRole: ;
   vs:term_status "unstable" .
        
 audRole:teacher-educationSpecialist a skos:Concept;
   skos:prefLabel "teacher/education specialist"@en-US;
   skosxl:preflabel audRole:label-teacher-educationSpecialist ;   
   skos:definition "A certified person directly involved with student instruction."@en-US;
-  skos:inScheme <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/>;
+  skos:inScheme audRole: ;
   vs:term_status "unstable" .
   
 #============================= 
