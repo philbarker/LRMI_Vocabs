@@ -16,7 +16,7 @@
 audRole: a skos:ConceptScheme;
   dc:title "LRMI Educational Audience Role Vocabulary" ;
   dc:creator "LRMI Task Group (DCMI)"@en-US ;
-  dc:description: "A concept scheme that defines the primary or intended roles of the audience (beneficiary) of the resource being described."@en-US ;
+  dc:description "A concept scheme that defines the primary or intended roles of the audience (beneficiary) of the resource being described."@en-US ;
   dcterms:dateSubmitted "2015-01-21"^^xsd:date ;
   dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
   adms:status bibo:draft .  
