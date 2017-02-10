@@ -67,7 +67,7 @@ alignment:readingLevel a skos:Concept ;
     skos:prefLabel "reading level"@en-US ;
     skosxl:prefLabel alignment:xl-readingLevel ;
     skos:definition "The point in the framework being referenced defines a level or range of reading ability expected for a person using the learning resource being described."@en-US ;
-    skos:scopeNote "Example frameworks include, but are limited to, Lexile Framework by MetaMetrics, ATOS by Renaissance Learning, Degrees of Reading Power (DRP) by Questar Assessment, Flesch-Kincaid (public domain), Reading Maturity by Pearson Education, SourceRater by Educational Testing Service, Easability Indicator by Coh-Metrix, and the Oxford Reading Tree levels from Oxford University Press."@en-US ;
+    skos:scopeNote "Example frameworks include, but are not limited to, Lexile Framework by MetaMetrics, ATOS by Renaissance Learning, Degrees of Reading Power (DRP) by Questar Assessment, Flesch-Kincaid (public domain), Reading Maturity by Pearson Education, SourceRater by Educational Testing Service, Easability Indicator by Coh-Metrix, and the Oxford Reading Tree levels from Oxford University Press."@en-US ;
     dcterms:source "Based on Common Education Data Standards (CEDS): https://ceds.ed.gov/element/000869#ReadingLevel."@en-US ;
     skos:inScheme alignment: ;
     adms:status bibo:published .
